@@ -12,5 +12,5 @@ ld abs2(ptf a) { return dot(a, a); }
 ld abs(ptf a) { return sqrtl(dot(a, a)); }
 int ori(pt a, pt b, pt c)
 { return sign(cross(b - a, c - a)); }
-bool operator(pt a, pt b)
+bool operator<(pt a, pt b)
 { return a.F != b.F ? a.F < b.F : a.S < b.S; }

@@ -1,14 +1,13 @@
-struct cost_flow {
-    static const int MXN = 1005;
+struct cost_flow { // maxn: node count
     static const int64_t INF = 102938475610293847LL;
     struct Edge {
         int v, r;
         int64_t f, c;
         Edge(int a,int b,int _c,int d):v(a),r(b),f(_c),c(d){ }
     };
-    int n, s, t, prv[MXN], prvL[MXN], inq[MXN];
-    int64_t dis[MXN], fl, cost;
-    vector<Edge> E[MXN];
+    int n, s, t, prv[maxn], prvL[maxn], inq[maxn];
+    int64_t dis[maxn], fl, cost;
+    vector<Edge> E[maxn];
     void init(int _n, int _s, int _t) {
         n = _n; s = _s; t = _t;
         for (int i = 0; i < n; i++) E[i].clear();

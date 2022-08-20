@@ -1,5 +1,5 @@
-template<typename T>
-struct dinic{
+template<typename T> // maxn: edge/node counts
+struct dinic{ // T: int or ll, up to range of flow
     const T IN_INF = (is_same_v<T, int>) ? INF : LINF;
     struct E{
         int v; T c; int r;
