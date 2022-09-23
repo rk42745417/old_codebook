@@ -1,5 +1,5 @@
-int sa[maxn], tmp[2][maxn], c[256];
-void get_sa(const string &s) {
+int sa[maxn], tmp[2][maxn], c[maxn];
+void get_sa(const string &s) { // m: char set
     int *x = tmp[0], *y = tmp[1], m = 256, n = s.size();
     for(int i = 0; i < m; i++) c[i] = 0;
     for(int i = 0; i < n; i++) c[x[i] = s[i]]++;
@@ -27,8 +27,8 @@ void get_sa(const string &s) {
         m = p + 1;
    }
 } // sa[i]: index which ranks i
-int rk[maxn], lcp[maxn];
-void get_cp(const string &s) {
+int rk[maxn], lcp[maxn]; // lcp[i] : lcp with i-1
+void get_lcp(const string &s) {
     int n = s.size(), val = 0;
     for(int i = 0; i < n; i++) rk[sa[i]] = i;
     for(int i = 0; i < n; i++) {
