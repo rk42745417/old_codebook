@@ -41,4 +41,4 @@ void get_lcp(const string &s) {
             lcp[rk[i]] = val;
         }
     }
-} // get_sa and get_lcp are not tested
+}
