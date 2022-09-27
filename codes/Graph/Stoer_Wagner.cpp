@@ -1,4 +1,4 @@
-// return globale min cut in O(n^3)
+// return global min cut in O(n^3)
 struct SW { // 1-based
     int edge[maxn][maxn], wei[maxn], n;
     bool vis[maxn], del[maxn];
