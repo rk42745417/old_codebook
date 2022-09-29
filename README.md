@@ -9,6 +9,5 @@ Last pdf can be found [here](https://raw.githubusercontent.com/rk42745417/codebo
 * Berlekamp-massey
 * Maximum Clique
 * Basic Geometry
-* Fast Walsh Transform
 * Directed MST
 * Dominator Tree
