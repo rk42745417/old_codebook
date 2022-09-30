@@ -1,0 +1,12 @@
+\subsection{Catalan number}
+
+\begin{center}
+Start from \(n = 0\): 1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786, ... \\
+\(C_n = \frac{1}{n + 1} \binom{2n}{n} = \frac{(2n)!}{(n + 1)! n!} = \Pi_{k = 2}^n \frac{n + k}{k}\) \\
+\(C_n = \binom{2n}{n} - \binom{2n}{n + 1}\) \\
+\\
+Recurrence \\
+\(C_0 = 1\) \\
+\(C_{n + 1} = \sum_{i = 0}^n C_i C_{n - i}\) \\
+\(C_{n + 1} = \frac{2(2n + 1)}{n + 2} C_n\) \\
+\end{center}
