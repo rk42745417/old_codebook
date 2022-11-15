@@ -8,10 +8,10 @@ struct dinic{ // T: int or ll, up to range of flow
     };
     vector<E> adj[maxn];
     pair<int, int> is[maxn]; // counts of edges
-    void add_edge(int u, int v, T c, int i){
+    void add_edge(int u, int v, T c, int i = 0){
         is[i] = {u, adj[u].size()};
-        adj[u].pb(E(v, c, (int) adj[v].size()));
-        adj[v].pb(E(u, 0, (int) adj[u].size() - 1));
+        adj[u].push_back(E(v, c, (int) adj[v].size()));
+        adj[v].push_back(E(u, 0, (int) adj[u].size() - 1));
     }
     int n, s, t;
     void init(int nn, int ss, int tt){
