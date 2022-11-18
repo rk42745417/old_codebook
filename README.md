@@ -11,5 +11,3 @@ Lastest pdf can be found [here](https://raw.githubusercontent.com/rk42745417/cod
 * Basic Geometry
 * Directed MST
 * Dominator Tree
-* Virtual Tree
-* 2-SAT

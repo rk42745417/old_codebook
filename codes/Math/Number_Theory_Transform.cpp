@@ -23,6 +23,7 @@ struct NTT {
         }
     }
     // n must be 2^k, and 0 <= f[i] < mod
+    // n >= the size after convolution
     void operator()(vector<ll> &f, int n, bool inv = false) {
         for(int i = 0, j = 0; i < n; i++) {
             if(i < j) swap(f[i], f[j]);
